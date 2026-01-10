@@ -1,28 +1,30 @@
+"use client";
+
 import React, { useState } from 'react';
 import { Book, Award, User } from 'lucide-react';
 
 export default function ThreeIconsRow() {
-  const [hoveredIcon, setHoveredIcon] = useState(null);
+  const [hoveredIcon, setHoveredIcon] = useState<number | null>(null);
 
   const icons = [
     {
       id: 1,
       Icon: Book,
       title: "Learn quick",
-      subtitle: "Quran Classes"
+      subtitle: "Quran Classes",
     },
     {
       id: 2,
       Icon: Award,
       title: "ISO certified",
-      subtitle: "islamic institution"
+      subtitle: "Islamic Institution",
     },
     {
       id: 3,
       Icon: User,
       title: "Online Arabic",
-      subtitle: "Classes For Kids"
-    }
+      subtitle: "Classes For Kids",
+    },
   ];
 
   return (
@@ -36,21 +38,19 @@ export default function ThreeIconsRow() {
               onMouseEnter={() => setHoveredIcon(item.id)}
               onMouseLeave={() => setHoveredIcon(null)}
             >
-              {/* Yellow Circle with Icon */}
-              <div 
+              <div
                 className={`w-28 h-28 bg-yellow-500 rounded-full flex items-center justify-center border-4 border-gray-800 transition-transform duration-700 ${
-                  hoveredIcon === item.id ? 'animate-spin' : ''
+                  hoveredIcon === item.id ? "animate-spin" : ""
                 }`}
               >
                 <item.Icon className="w-12 h-12 text-white" strokeWidth={2.5} />
               </div>
-              
-              {/* Text Content */}
+
               <div className="text-left">
-                <div className="text-xl font-bold text-gray-900 leading-tight">
+                <div className="text-xl font-bold text-gray-900">
                   {item.title}
                 </div>
-                <div className="text-xl font-bold text-gray-900 leading-tight">
+                <div className="text-xl font-bold text-gray-900">
                   {item.subtitle}
                 </div>
               </div>
