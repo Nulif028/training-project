@@ -5,6 +5,7 @@ import ThreeIconsRow from "./components/ThreeIconsRow";
 import Services from "./components/Services";
 import Courses from "./components/Courses";
 import Gallery from "./components/ImageSection";
+import PreFooter from "./components/PreFooter";
 import Footer from "./components/Footer";
 
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Services />
       <Courses />
       <Gallery />
+      <PreFooter />
       <Footer />
     </>
   );
