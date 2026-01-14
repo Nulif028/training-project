@@ -25,7 +25,7 @@ export default function Footer() {
             {["F", "T", "I", "Y"].map((icon, i) => (
               <div
                 key={i}
-                className="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center text-white cursor-pointer hover:bg-green-600 transition"
+                className="w-10 h-10 rounded-full bg-greflex items-center justify-center text-white cursor-pointer hover:bg-green-600 transition"
               >
                 {icon}
               </div>
