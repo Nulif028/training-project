@@ -8,10 +8,11 @@ import AchievementSection from "./components/AchievementSection";
 import CoursesSection from "./components/CoursesSection";
 import LabelCard from "./components/LabelCard";
 import WhyChooseUs from "./components/WhyChooseUs";
-import Courses from "./components/Courses";
-import ImageSection from "./components/ImageSection";
-import PreFooter from "./components/PreFooter";
-import Footer from "./components/Footer";
+import CustomerReview from "./components/CustomerReview";
+import PricingSection from "./components/PricingSection";
+import GallerySection from "./components/GallerySection";
+import NewsUpdatesPage from "./components/NewsUpdatesPage";
+import FooterA from "./components/FooterA";
 
 
 export default function Home() {
@@ -27,10 +28,11 @@ export default function Home() {
       <CoursesSection />
       <LabelCard />
       <WhyChooseUs />
-      <Courses />
-      <ImageSection />
-      <PreFooter />
-      <Footer />
+      <CustomerReview />
+      <PricingSection />
+      <GallerySection />
+      <NewsUpdatesPage />
+      <FooterA />
     </>
   );
 }

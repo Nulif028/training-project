@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default function Footer() {
+export default function FooterA() {
   return (
     <footer className="bg-gradient-to-r from-[#0b1f17] to-[#0e2a20] text-gray-300">
        <img src="/images/background/footer-bg.jpg" alt="" className="w-full object-cover lg:h-24 h-48"/>
